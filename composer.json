@@ -1,7 +1,7 @@
 {
-    "name": "admad/cakephp-jwt-auth",
+    "name": "kongka/cakephp-3-jwt-auth",
     "type": "cakephp-plugin",
-    "description": "CakePHP plugin for authenticating using JSON Web Tokens",
+    "description": "CakePHP plugin for authenticating using JSON Web Tokens fork from admad/cakephp-jwt-auth",
     "keywords": [
         "cakephp",
         "authenticate",
