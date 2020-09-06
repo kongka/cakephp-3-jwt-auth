@@ -12,7 +12,7 @@ specification in detail [here](https://tools.ietf.org/html/draft-ietf-oauth-json
 ## Installation
 
 ```sh
-composer require admad/cakephp-jwt-auth
+composer require kongka/cakephp-3-jwt-auth
 ```
 
 ## Usage
@@ -21,13 +21,13 @@ In your app's `config/bootstrap.php` add:
 
 ```php
 // In config/bootstrap.php
-Plugin::load('ADmad/JwtAuth');
+Plugin::load('kongka/JwtAuth');
 ```
 
 or using cake's console:
 
 ```sh
-./bin/cake plugin load ADmad/JwtAuth
+./bin/cake plugin load kongka/JwtAuth
 ```
 
 ## Configuration:
@@ -43,7 +43,7 @@ Setup `AuthComponent`:
         $this->loadComponent('Auth', [
             'storage' => 'Memory',
             'authenticate' => [
-                'ADmad/JwtAuth.Jwt' => [
+                'kongka/JwtAuth.Jwt' => [
                     'userModel' => 'Users',
                     'fields' => [
                         'username' => 'id'
