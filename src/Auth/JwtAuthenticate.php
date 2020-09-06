@@ -99,8 +99,10 @@ class JwtAuthenticate extends BaseAuthenticate
             'unauthenticatedException' => UnauthorizedException::class,
             'key' => null,
         ];
+        
+        $defaultConfig = array_merge($defaultConfig, $config);
 
-        if (!class_exists(UnauthorizedException::class)) {
+        if (!class_exists($defaultConfig['unauthenticatedException'])) {
             $defaultConfig['unauthenticatedException'] = 'Cake\Network\Exception\UnauthorizedException';
         }
 
