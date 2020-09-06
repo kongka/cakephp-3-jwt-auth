@@ -1,5 +1,5 @@
 <?php
-namespace ADmad\JwtAuth\Auth;
+namespace kongka\JwtAuth\Auth;
 
 use Cake\Auth\BaseAuthenticate;
 use Cake\Controller\ComponentRegistry;
@@ -16,7 +16,7 @@ use Firebase\JWT\JWT;
  *
  * ```
  *  $this->Auth->config('authenticate', [
- *      'ADmad/JwtAuth.Jwt' => [
+ *      'kongka/JwtAuth.Jwt' => [
  *          'parameter' => 'token',
  *          'userModel' => 'Users',
  *          'fields' => [
